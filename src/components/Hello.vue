@@ -1,5 +1,7 @@
 <script setup>
-
+function contactMe() {
+  window.open('https://wa.me/84999340460', '_blank');
+}
 </script>
 
 <template>
@@ -12,7 +14,7 @@
       Full Stack Developer
     </p>
     <div id="button-container">
-      <button>Contrate-me</button>
+      <button @click=contactMe >Contrate-me</button>
       <div class="shadow"></div>
     </div>
   </div>

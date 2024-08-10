@@ -6,20 +6,30 @@ const isMenuOpen = ref(false);
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
   }
+
+function scrollToSection(idSection) {
+  const section = document.getElementById(idSection);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.error('Cannot find section: ' + idSection);
+  }
+}
+
 </script>
 
 <template>
-  <header class="header">
+  <header class="header" id="home">
     <div class="logo-container">
       <img src="/static/img/g.png" alt="letter g" style="max-width: 4rem">
     </div>
     <div class="navigation">
       <nav>
         <ul :class="{'nav-list': true, 'active': isMenuOpen}">
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Contato</a></li>
-          <li><a href="">Projetos</a></li>
+          <li><a @click.prevent='scrollToSection("home")'>Inicio</a></li>
+          <li><a @click.prevent='scrollToSection("about")'>Sobre</a></li>
+          <li><a @click.prevent='scrollToSection("projects")'>Projetos</a></li>
+          <li><a @click.prevent='scrollToSection("contact")'>Contato</a></li>
         </ul>
         <button @click="toggleMenu" class="menu-toggle" aria-label="Toggle menu">
           <span class="menu-icon"></span>
@@ -68,6 +78,7 @@ function toggleMenu() {
     color: #FFF;
     font-size: 2rem;
     font-weight: bold;
+    cursor: pointer;
   }
 
   .menu-toggle {

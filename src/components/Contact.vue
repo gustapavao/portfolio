@@ -1,11 +1,14 @@
 <script setup>
+function contactMe() {
+  window.open('https://wa.me/84999340460', '_blank');
+}
 
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" id="contact">
     <p>Estou aguardando o seu contato:</p>
-    <button @click=>
+    <button @click=contactMe>
       Contate-me
     </button>
   </div>

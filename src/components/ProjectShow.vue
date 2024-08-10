@@ -24,7 +24,7 @@ const randoMovie = {
 </script>
 
 <template>
-<div class="projects-container">
+<div class="projects-container" id="projects">
   <div class="projects-header">
     <h1>Projects</h1>
     <p>
@@ -33,10 +33,6 @@ const randoMovie = {
   </div>
   <div class="projects">
     <Projects :name=pomonic.name :description=pomonic.description :tech=pomonic.tech :repository=pomonic.repository :link=pomonic.link />
-    <Projects :name=randoMovie.name :description=randoMovie.description :tech=randoMovie.tech :repository=randoMovie.repository :link=randoMovie.link />
-    <Projects :name=randoMovie.name :description=randoMovie.description :tech=randoMovie.tech :repository=randoMovie.repository :link=randoMovie.link />
-    <Projects :name=randoMovie.name :description=randoMovie.description :tech=randoMovie.tech :repository=randoMovie.repository :link=randoMovie.link />
-    <Projects :name=randoMovie.name :description=randoMovie.description :tech=randoMovie.tech :repository=randoMovie.repository :link=randoMovie.link />
     <Projects :name=randoMovie.name :description=randoMovie.description :tech=randoMovie.tech :repository=randoMovie.repository :link=randoMovie.link />
   </div>
 </div>

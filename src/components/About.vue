@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="about-container">
+  <div class="about-container" id="about">
     <div class="img-container">
       <img src="/static/img/myself2.png" alt="" id="myself">
       </div>
