@@ -3,20 +3,20 @@ import Projects from "@/components/Projects.vue";
 
 const pomonic = {
   name: "Pomonic",
-  description: "Um pomodoro que ajuda no foco ao realizar tarefas diárias. Foi construido utilizando:",
+  description: "Pomonic ajuda você a atingir suas metas sem estresse. Mantendo um equilíbrio saudável entre foco e descanso. Foi construido utilizando:",
   tech: ['static/img/tech/vue-svgrepo-com.svg', 'static/img/tech/css-3-svgrepo-com.svg', 'static/img/tech/html-5-svgrepo-com.svg', 'static/img/tech/javascript-svgrepo-com.svg'],
-  repository: "https://github.com/gustapavao/pomonic",
-  link: "https://pavao.life/pomonic"
+  repository: "https://github.com/gustapavao/pomonic-vue",
+  link: "https://pomonic-vue.vercel.app/"
 }
 
 const randoMovie = {
   name: "RandoMovie",
-  description: "Uma aplicação para selecionar filmes a partir de uma watchlist do letterboxd ou receber um filme aleatório. Foi construido utilizando:",
+  description: "Melhor amigo dos indecisos na hora de escolher um filme. Foi construido utilizando:",
   tech: ['static/img/tech/vue-svgrepo-com.svg',
     'static/img/tech/css-3-svgrepo-com.svg',
     'static/img/tech/html-5-svgrepo-com.svg',
     'static/img/tech/javascript-svgrepo-com.svg',
-    'static/img/tech/java-svgrepo-com.svg',
+    // 'static/img/tech/java-svgrepo-com.svg',
     'static/img/tech/python-svgrepo-com.svg',],
   repository: "https://github.com/gustapavao/randomovie",
   link: "https://pavao.life/randomovie",
