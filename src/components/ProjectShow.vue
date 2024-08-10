@@ -26,7 +26,7 @@ const randoMovie = {
 <template>
 <div class="projects-container" id="projects">
   <div class="projects-header">
-    <h1>Projects</h1>
+    <h1>Projetos</h1>
     <p>
       Alguns projetos que já desenvolvi estão aqui, assim como as tecnologias que usei para desenvolve-los.
     </p>
