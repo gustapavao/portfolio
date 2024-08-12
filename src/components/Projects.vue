@@ -55,6 +55,11 @@ p {
   margin: 0 0 2rem 0;
 }
 
+#description {
+  width: 100%;
+  height: 30%;
+}
+
 .technologies {
   display: flex;
   flex-direction: row;
