@@ -1,6 +1,6 @@
 <script setup>
 function contactMe() {
-  window.open('https://wa.me/84999340460', '_blank');
+  window.open('https://wa.me/5584999340460', '_blank');
 }
 </script>
 
@@ -96,7 +96,7 @@ function contactMe() {
   @media (max-width: 1600px) {
     #caric {
       width: 20rem;
-      margin-left: 5rem;
+      margin-left: 15rem;
     }
     .hello {
       display: flex;
@@ -113,7 +113,7 @@ function contactMe() {
   @media (max-width: 1000px) {
     #caric {
       width: 20rem;
-      margin-left: 0;
+      margin-left: 4rem;
     }
     .hello {
       display: flex;
