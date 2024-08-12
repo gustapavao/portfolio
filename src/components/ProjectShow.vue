@@ -1,6 +1,7 @@
 <script setup>
 import Projects from "@/components/Projects.vue";
 
+// Falta linkar à API e remover esses dados brutos daqui.
 const pomonic = {
   name: "Pomonic",
   description: "Pomonic ajuda você a atingir suas metas sem estresse. Mantendo um equilíbrio saudável entre foco e descanso. Foi construido utilizando:",
@@ -16,10 +17,33 @@ const randoMovie = {
     'static/img/tech/css-3-svgrepo-com.svg',
     'static/img/tech/html-5-svgrepo-com.svg',
     'static/img/tech/javascript-svgrepo-com.svg',
-    // 'static/img/tech/java-svgrepo-com.svg',
     'static/img/tech/python-svgrepo-com.svg',],
   repository: "https://github.com/gustapavao/randomovie",
   link: "https://pavao.life/randomovie",
+}
+
+const portfolio = {
+  name: "Portfólio",
+  description: "Este portfólio que está olhando agora. Bem construido e melhorando aos poucos.",
+  tech: [
+    'static/img/tech/vue-svgrepo-com.svg',
+    'static/img/tech/css-3-svgrepo-com.svg',
+    'static/img/tech/html-5-svgrepo-com.svg',
+    'static/img/tech/javascript-svgrepo-com.svg',
+  ],
+  repository: "https://github.com/gustapavao/portfolio",
+  link: "https://portfolio-gustavo-pavaos-projects.vercel.app/"
+}
+
+const projects = {
+  name: "Gestor de Projetos",
+  description: "API que fornece os dados dos meus projetos pessoais, tais como nome, descrição, repositório etc",
+  tech: [
+    'static/img/tech/java-svgrepo-com.svg',
+    'static/img/tech/spring.svg',
+  ],
+  repository: "https://github.com/gustavopavao/personal_projects",
+  link: null
 }
 </script>
 
@@ -34,6 +58,8 @@ const randoMovie = {
   <div class="projects">
     <Projects :name=pomonic.name :description=pomonic.description :tech=pomonic.tech :repository=pomonic.repository :link=pomonic.link />
     <Projects :name=randoMovie.name :description=randoMovie.description :tech=randoMovie.tech :repository=randoMovie.repository :link=randoMovie.link />
+    <Projects :name=portfolio.name :description=portfolio.description :tech=portfolio.tech :repository=portfolio.repository :link=portfolio.link />
+    <Projects :name=projects.name :description=projects.description :tech=projects.tech :repository=projects.repository :link=projects.link />
   </div>
 </div>
 </template>

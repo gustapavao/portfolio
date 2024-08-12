@@ -19,7 +19,9 @@ const props = defineProps({
       <img :src="img" v-for="img in props.tech" alt="">
     </div>
     <a target="_blank" :href=props.repository ><button>Repositório</button></a>
-    <a :href=props.link target="_blank"><button><img src="" alt="">Aplicação</button></a>
+    <a v-if="props.link" :href="props.link" target="_blank">
+      <button><img src="" alt="">Aplicação</button>
+    </a>
   </div>
 </template>
 
@@ -35,7 +37,7 @@ const props = defineProps({
   color: #FFF;
   margin: 2rem 4rem;
   width: 25%;
-  height: 36rem;
+  height: 40rem;
 }
 
 h2 {
