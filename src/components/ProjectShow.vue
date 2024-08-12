@@ -42,7 +42,7 @@ const projects = {
     'static/img/tech/java-svgrepo-com.svg',
     'static/img/tech/spring.svg',
   ],
-  repository: "https://github.com/gustavopavao/personal_projects",
+  repository: "https://github.com/gustapavao/personal_projects",
   link: null
 }
 </script>
